@@ -51,7 +51,7 @@ public class RabbitMQConfig implements DisposableBean {
     @PostConstruct
     public String buildQueue() throws IOException, TimeoutException {
         Channel channel = getChannel();
-        return channel.queueDeclare(properties.getQueueName(), true, false, false,null).getQueue();
+        return channel.queueDeclare(properties.getQueueName(), true, false, false, null).getQueue();
     }
 
     @PostConstruct
