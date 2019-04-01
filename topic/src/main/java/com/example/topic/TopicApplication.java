@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  */
 @SpringBootApplication
 @EnableConfigurationProperties
-@EnableRabbit
+//@EnableRabbit
 public class TopicApplication {
 
     public static void main(String[] args) {
